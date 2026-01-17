@@ -19,6 +19,7 @@ int main() {
             // hier Funktion für Addition einfügen
             break;
         case 2:
+<<<<<<< Updated upstream
             cout << "Gruppenmitglied 1 kann hier die Subtraktion implementieren."  << endl;
         double zahl1sub, zahl2sub, ergebnissub;
         cout << "Subtraktion" << endl;
@@ -30,6 +31,16 @@ int main() {
         cout << "Ergebnis:" << zahl1sub << "-" << zahl2sub << "= " << ergebnissub << endl;
 
 
+=======
+            double zahl1sub, zahl2sub, ergebnissub;
+            cout << "Subtraktion" << endl;
+            cout << "Gib die erste Zahl ein: ";
+            cin >> zahl1sub;
+            cout << "Gib die zweite Zahl ein: ";
+            cin >> zahl2sub;
+            ergebnissub = zahl1sub - zahl2sub;
+            cout << "Ergebnis:" << zahl1sub << "-" << zahl2sub << "= " << ergebnissub << endl;
+>>>>>>> Stashed changes
             break;
         case 3:
             cout << "Gruppenmitglied 1 kann hier die Multiplikation implementieren."  << endl;
