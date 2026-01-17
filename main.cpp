@@ -11,15 +11,23 @@ int main() {
     cout << "3 fuer Multiplikation"  << endl;
     cout << "4 fuer Division"  << endl;
 
-    cin >> wahl;
+    if (!(cin >> wahl)) return 1;
 
     switch (wahl) {
-        case 1:
-            cout << "Gruppenmitglied 1 kann hier die Addition implementieren."  << endl;
-            // hier Funktion für Addition einfügen
+        case 1: { 
+            float* values = new float[2];
+            cout << "Erste Zahl: "  << endl;
+            cin >> values[0];
+            cout << "Zweite Zahl: "  << endl;
+            cin >> values[1];
+            
+            cout << "Resultat: " << values[0] + values[1] << endl;
+
+            delete[] values; 
             break;
+        } 
+            
         case 2:
-<<<<<<< Updated upstream
             cout << "Gruppenmitglied 1 kann hier die Subtraktion implementieren."  << endl;
         double zahl1sub, zahl2sub, ergebnissub;
         cout << "Subtraktion" << endl;
@@ -31,20 +39,23 @@ int main() {
         cout << "Ergebnis:" << zahl1sub << "-" << zahl2sub << "= " << ergebnissub << endl;
 
 
-=======
-            double zahl1sub, zahl2sub, ergebnissub;
-            cout << "Subtraktion" << endl;
-            cout << "Gib die erste Zahl ein: ";
-            cin >> zahl1sub;
-            cout << "Gib die zweite Zahl ein: ";
-            cin >> zahl2sub;
-            ergebnissub = zahl1sub - zahl2sub;
-            cout << "Ergebnis:" << zahl1sub << "-" << zahl2sub << "= " << ergebnissub << endl;
->>>>>>> Stashed changes
+
             break;
         case 3:
             cout << "Gruppenmitglied 1 kann hier die Multiplikation implementieren."  << endl;
-            // hier die Funktion für die Multiplikation einfügen
+            int Zahl1mul;
+            int Zahl2mul;
+            int Zahl3mul;
+
+
+            cout << "Zahl 1" << endl;
+            cin >> Zahl1mul;
+            cout << "Zahl 2" << endl;
+            cin >> Zahl2mul;
+            Zahl3mul = Zahl1mul * Zahl2mul;
+
+            cout << Zahl3mul << endl;
+
             break;
         case 4:
             cout << "Gruppenmitglied 1 kann hier die Division implementieren."  << endl;
@@ -62,7 +73,6 @@ int main() {
             cout << "Falsche Auswahl, das Programm wird beendet."  << endl;
             break;
     }
-
 
     return 0;
 }
