@@ -11,16 +11,24 @@ int main() {
     cout << "3 fuer Multiplikation"  << endl;
     cout << "4 fuer Division"  << endl;
 
-    cin >> wahl;
+    if (!(cin >> wahl)) return 1;
 
     switch (wahl) {
-        case 1:
-            cout << "Gruppenmitglied 1 kann hier die Addition implementieren."  << endl;
-            // hier Funktion für Addition einfügen
+        case 1: { 
+            float* values = new float[2];
+            cout << "Erste Zahl: "  << endl;
+            cin >> values[0];
+            cout << "Zweite Zahl: "  << endl;
+            cin >> values[1];
+            
+            cout << "Resultat: " << values[0] + values[1] << endl;
+
+            delete[] values; 
             break;
+        } 
+            
         case 2:
             cout << "Gruppenmitglied 1 kann hier die Subtraktion implementieren."  << endl;
-            // hier Funktion für die Subtraktion einfügen
             break;
         case 3:
             cout << "Gruppenmitglied 1 kann hier die Multiplikation implementieren."  << endl;
@@ -40,13 +48,11 @@ int main() {
             break;
         case 4:
             cout << "Gruppenmitglied 1 kann hier die Division implementieren."  << endl;
-            // hier die Funktion für die Division einfügen
             break;
         default:
             cout << "Falsche Auswahl, das Programm wird beendet."  << endl;
             break;
     }
-
 
     return 0;
 }
