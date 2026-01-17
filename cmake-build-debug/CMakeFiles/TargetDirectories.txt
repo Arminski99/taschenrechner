@@ -1,0 +1,3 @@
+C:/Users/kai0/OneDrive/Dokumente/GitHub/taschenrechner/cmake-build-debug/CMakeFiles/taschenrechner.dir
+C:/Users/kai0/OneDrive/Dokumente/GitHub/taschenrechner/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/kai0/OneDrive/Dokumente/GitHub/taschenrechner/cmake-build-debug/CMakeFiles/rebuild_cache.dir
