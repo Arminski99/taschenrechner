@@ -32,6 +32,19 @@ int main() {
             break;
         case 3:
             cout << "Gruppenmitglied 1 kann hier die Multiplikation implementieren."  << endl;
+            int Zahl1mul;
+            int Zahl2mul;
+            int Zahl3mul;
+
+
+            cout << "Zahl 1" << endl;
+            cin >> Zahl1mul;
+            cout << "Zahl 2" << endl;
+            cin >> Zahl2mul;
+            Zahl3mul = Zahl1mul * Zahl2mul;
+
+            cout << Zahl3mul << endl;
+
             break;
         case 4:
             cout << "Gruppenmitglied 1 kann hier die Division implementieren."  << endl;
