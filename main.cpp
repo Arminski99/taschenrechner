@@ -29,16 +29,14 @@ int main() {
             
         case 2:
             cout << "Gruppenmitglied 1 kann hier die Subtraktion implementieren."  << endl;
-        double zahl1sub, zahl2sub, ergebnissub;
-        cout << "Subtraktion" << endl;
-        cout << "Gib die erste Zahl ein: ";
-        cin >> zahl1sub;
-        cout << "Gib die zweite Zahl ein: ";
-        cin >> zahl2sub;
-        ergebnissub = zahl1sub - zahl2sub;
-        cout << "Ergebnis:" << zahl1sub << "-" << zahl2sub << "= " << ergebnissub << endl;
-
-
+            double zahl1sub, zahl2sub, ergebnissub;
+            cout << "Subtraktion" << endl;
+            cout << "Gib die erste Zahl ein: ";
+            cin >> zahl1sub;
+            cout << "Gib die zweite Zahl ein: ";
+            cin >> zahl2sub;
+            ergebnissub = zahl1sub - zahl2sub;
+            cout << "Ergebnis:" << zahl1sub << "-" << zahl2sub << "= " << ergebnissub << endl;
 
             break;
         case 3:
@@ -59,14 +57,14 @@ int main() {
             break;
         case 4:
             cout << "Gruppenmitglied 1 kann hier die Division implementieren."  << endl;
-        double zahl1div, zahl2div, ergebnisdiv;
-        cout << "Division" << endl;
-        cout << "Gib die erste Zahl ein: ";
-        cin >> zahl1div;
-        cout << "Gib die zweite Zahl ein: ";
-        cin >> zahl2div;
-        ergebnisdiv = zahl1div / zahl2div;
-        cout << "Ergebnis:" << zahl1div << "/" << zahl2div << "= " << ergebnisdiv << endl;
+            double zahl1div, zahl2div, ergebnisdiv;
+            cout << "Division" << endl;
+            cout << "Gib die erste Zahl ein: ";
+            cin >> zahl1div;
+            cout << "Gib die zweite Zahl ein: ";
+            cin >> zahl2div;
+            ergebnisdiv = zahl1div / zahl2div;
+            cout << "Ergebnis:" << zahl1div << "/" << zahl2div << "= " << ergebnisdiv << endl;
             break;
 
         default:
