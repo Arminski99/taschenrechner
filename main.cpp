@@ -11,7 +11,7 @@ int main() {
     cout << "3 fuer Multiplikation"  << endl;
     cout << "4 fuer Division"  << endl;
 
-    if (!(cin >> wahl)) return 1;
+    cin >> wahl;
 
     float* values = new float[2];
 
